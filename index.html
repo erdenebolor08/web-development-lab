@@ -1,35 +1,176 @@
 <!DOCTYPE html>
-<html lang="mn">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Миний товч CV</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Erdenebolor | Creative Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <h1>Нэр: Эрдэнэболор</h1>
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">ERDENEBOLOR</h2>
 
-    <p>
-        Мэдээллийн технологийн сургуулийн 2-р суралцагч.
-        Вэб хөгжүүлэлт болон шинэ технологиудыг сонирхон судалдаг.
-    </p>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
 
-    <h2>Эзэмшсэн чадварууд</h2>
+            <button id="themeButton">🌙</button>
+        </nav>
+    </header>
 
-    <ul>
-        <li>HTML5 & CSS3 үндэс</li>
-        <li>Git & GitHub хувилбар удирдлага</li>
-        <li>Программчлалын C++ хэл</li>
-    </ul>
 
-    <h2>Холбоо барих</h2>
+    <main>
 
-    <p>
-        Миний GitHub профайлтай танилцах:
-        <a href="https://github.com/erdenebolor08">
-            GitHub Холбоос
-        </a>
-    </p>
+        <!-- HOME -->
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="small-title">WELCOME TO MY WEBSITE</p>
+
+                <h1>
+                    Hello, I'm
+                    <span>Erdenebolor</span> 👋
+                </h1>
+
+                <p class="description">
+                    I am a curious learner exploring web development,
+                    technology and creative design.
+                </p>
+
+                <a href="#projects" class="main-button">
+                    Explore My Work →
+                </a>
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+
+            <div class="about-card">
+                <div class="about-icon">👩‍💻</div>
+
+                <div>
+                    <h3>A Little About Me</h3>
+
+                    <p>
+                        Hello! My name is Erdenebolor.
+                        I enjoy learning new things and exploring
+                        technology. This website is my first creative
+                        portfolio project created with HTML, CSS and
+                        JavaScript.
+                    </p>
+
+                    <p>
+                        My goal is to continuously learn, create
+                        interesting projects and improve my digital skills.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SKILLS -->
+        <section id="skills" class="section">
+            <h2>My Skills</h2>
+
+            <div class="skills-container">
+
+                <div class="skill-card">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML</h3>
+                    <p>Building the structure of web pages.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">🎨</div>
+                    <h3>CSS</h3>
+                    <p>Creating beautiful layouts and designs.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">⚡</div>
+                    <h3>JavaScript</h3>
+                    <p>Adding interaction and dynamic features.</p>
+                </div>
+
+                <div class="skill-card">
+                    <div class="skill-icon">💡</div>
+                    <h3>Creative Design</h3>
+                    <p>Developing new ideas and visual concepts.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section id="projects" class="section">
+            <h2>My Projects</h2>
+
+            <div class="projects-container">
+
+                <div class="project-card">
+                    <span>01</span>
+                    <h3>Personal CV</h3>
+                    <p>
+                        My first HTML project containing
+                        personal information and skills.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <span>02</span>
+                    <h3>Creative Portfolio</h3>
+                    <p>
+                        A personal website created using
+                        HTML, CSS and JavaScript.
+                    </p>
+                </div>
+
+                <div class="project-card">
+                    <span>03</span>
+                    <h3>Future Project</h3>
+                    <p>
+                        More creative web projects
+                        are coming soon.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="section contact">
+            <h2>Let's Connect</h2>
+
+            <p>
+                Thank you for visiting my website!
+            </p>
+
+            <a href="mailto:erdenebolor@gmail.com" class="main-button">
+                📩 Contact Me
+            </a>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 Erdenebolor | Creative Portfolio</p>
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 </html>

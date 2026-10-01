@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лаборатори 02 - Оюутны анкет</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Оюутны Бүртгэлийн Портал</h1>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Нүүр</a></li>
+                <li><a href="#">Анкет</a></li>
+                <li><a href="#">Тусламж</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <article>
+
+            <section>
+                <h2>Хэрэглэгчийн анкет бөглөх</h2>
+
+                <p>
+                    Өөрийн мэдээллээ үнэн зөв бөглөж,
+                    анкетыг илгээнэ үү.
+                </p>
+                <form action="#" method="POST" enctype="multipart/form-data">
+
+    <fieldset>
+        <legend>Хувийн мэдээлэл</legend>
+
+        <label for="fullname">Овог нэр:</label><br>
+        <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Овог Нэр"
+            required
+            minlength="2"
+        >
+        <br><br>
+
+        <label for="email">Цахим хаяг:</label><br>
+        <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+            required
+        >
+        <br><br>
+
+        <label for="password">Нууц үг:</label><br>
+        <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Дор хаяж 6 тэмдэгт"
+            required
+            minlength="6"
+        >
+        <br><br>
+
+        <label for="phone">Утасны дугаар:</label><br>
+        <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="88112233"
+            pattern="[0-9]{8}"
+            required
+        >
+        <br><br>
+
+        <label for="dob">Төрсөн огноо:</label><br>
+        <input
+            type="date"
+            id="dob"
+            name="dob"
+            required
+        >
+        <br><br>
+
+        <label>Хүйс:</label><br>
+
+        <input
+            type="radio"
+            id="male"
+            name="gender"
+            value="male"
+            required
+        >
+        <label for="male">Эрэгтэй</label>
+
+        <input
+            type="radio"
+            id="female"
+            name="gender"
+            value="female"
+        >
+        <label for="female">Эмэгтэй</label>
+
+    </fieldset>
+    <br>
+
+<fieldset>
+    <legend>Боловсрол ба Сонирхол</legend>
+
+    <label for="degree">Суралцаж буй түвшин:</label><br>
+
+    <select id="degree" name="degree" required>
+        <option value="">-- Сонгоно уу --</option>
+        <option value="bachelor">Бакалавр</option>
+        <option value="master">Магистр</option>
+        <option value="doctor">Докторант</option>
+    </select>
+
+    <br><br>
+
+    <label>Сонирхож буй технологиуд:</label><br>
+
+    <input type="checkbox" id="html" name="skills" value="HTML">
+    <label for="html">HTML / CSS</label><br>
+
+    <input type="checkbox" id="javascript" name="skills" value="JavaScript">
+    <label for="javascript">JavaScript</label><br>
+
+    <input type="checkbox" id="python" name="skills" value="Python">
+    <label for="python">Python</label>
+
+    <br><br>
+
+    <label for="avatar">Профайл зураг:</label><br>
+
+    <input
+        type="file"
+        id="avatar"
+        name="avatar"
+        accept="image/*"
+    >
+
+    <br><br>
+
+    <label for="bio">Өөрийн тухай:</label><br>
+
+    <textarea
+        id="bio"
+        name="bio"
+        rows="5"
+        cols="45"
+        placeholder="Өөрийнхөө тухай товч бичнэ үү..."
+    ></textarea>
+
+</fieldset>
+
+<br>
+
+<button type="submit">Анкет илгээх</button>
+<button type="reset">Дахин эхлүүлэх</button>
+
+</form>
+
+            </section>
+
+        </article>
+        <section>
+    <h2>Миний сонирхол</h2>
+
+    <ul>
+        <li>Хөгжим тоглох</li>
+        <li>Фото зураг авах</li>
+        <li>Бүжиглэх</li>
+    </ul>
+</section>
+<section>
+    <h2>Миний дүн</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Хичээл</th>
+                <th>Дүн</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Веб зохиомж</td>
+                <td>100</td>
+            </tr>
+
+            <tr>
+                <td>Мэдээллийн сан</td>
+                <td>99</td>
+            </tr>
+
+            <tr>
+                <td>Алгоритм</td>
+                <td>95</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Веб зохиомж хичээл.</p>
+    </footer>
+
+</body>
+</html>
