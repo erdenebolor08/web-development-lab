@@ -1,0 +1,171 @@
+/* Ерөнхий тохиргоо */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f0eb;
+    color: #3e2c23;
+}
+
+/* HEADER */
+header {
+    background-color: #795548;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+}
+
+header p {
+    margin: 0;
+}
+
+/* NAVIGATION - FLEXBOX */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    background-color: #4e342e;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* MAIN - GRID */
+main {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 25px;
+
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Үндсэн хэсэг */
+.content {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    margin-top: 0;
+}
+
+/* CARDS - CSS GRID */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background-color: #faf7f5;
+    padding: 20px;
+    border: 1px solid #d7ccc8;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #6d4c41;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.card button {
+    align-self: flex-start;
+
+    background-color: #795548;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #4e342e;
+}
+
+/* SIDEBAR */
+aside {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+aside h2 {
+    margin-top: 0;
+    color: #6d4c41;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside li {
+    margin-bottom: 10px;
+}
+
+aside a {
+    color: #795548;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    background-color: #4e342e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 800px) {
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+}
