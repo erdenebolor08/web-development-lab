@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nomad Coffee — шинэхэн кофе, тайван мөч.">
+
+    <title>Nomad Coffee | Кофены ертөнц</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <a href="#home" class="logo" aria-label="Нүүр хуудас">
+            NOMAD<span>☕</span>
+        </a>
+
+        <button
+            class="menu-btn"
+            type="button"
+            aria-label="Цэс нээх"
+            aria-expanded="false"
+            aria-controls="main-nav"
+        >
+            ☰
+        </button>
+
+        <nav class="nav" id="main-nav">
+            <a href="#home">Нүүр</a>
+            <a href="#menu">Цэс</a>
+            <a href="#story">Бидний тухай</a>
+            <a href="#contact">Холбоо барих</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- НҮҮР ХЭСЭГ -->
+        <section class="hero" id="home">
+
+            <div class="hero-text">
+
+                <p class="small-title">
+                    NOMAD COFFEE-Д ТАВТАЙ МОРИЛ
+                </p>
+
+                <h1>
+                    Таны өдөр тутмын
+                    <span>кофены мөч.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Шинэхэн кофе, тайван өглөө,
+                    өөртөө зориулсан бяцхан сайхан мөч.
+                </p>
+
+                <a href="#menu" class="hero-button">
+                    Цэс үзэх
+                </a>
+
+            </div>
+
+            <div class="coffee-art" aria-hidden="true">
+                ☕
+            </div>
+
+        </section>
+
+
+        <!-- КОФЕНЫ ЦЭС -->
+        <section class="menu-section" id="menu">
+
+            <div class="section-heading">
+                <p>БИДНИЙ СОНГОЛТ</p>
+                <h2>Таны дуртай амтыг бүтээе</h2>
+            </div>
+
+            <div class="coffee-grid">
+
+                <article class="coffee-card">
+                    <div class="coffee-icon" aria-hidden="true">☕</div>
+                    <h3>Ванильтай латте</h3>
+                    <p>
+                        Эспрессо, зөөлөн сүү болон
+                        ванилийн анхилуун амт.
+                    </p>
+                    <strong>15,000₮</strong>
+                </article>
+
+                <article class="coffee-card">
+                    <div class="coffee-icon" aria-hidden="true">🍫</div>
+                    <h3>Карамель мокка</h3>
+                    <p>
+                        Шоколадны баялаг амт,
+                        зөөлөн карамелийн хослол.
+                    </p>
+                    <strong>17,000₮</strong>
+                </article>
+
+                <article class="coffee-card">
+                    <div class="coffee-icon" aria-hidden="true">☕</div>
+                    <h3>Сонгодог эспрессо</h3>
+                    <p>
+                        Хүчтэй, тэнцвэртэй бөгөөд
+                        энгийн сонгодог амт.
+                    </p>
+                    <strong>11,000₮</strong>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- БИДНИЙ ТУХАЙ -->
+        <section class="story" id="story">
+
+            <div class="story-content">
+
+                <p class="small-title">БИДНИЙ ТУХАЙ</p>
+
+                <h2>
+                    Энгийн кофе.
+                    <span>Дулаан мөч.</span>
+                </h2>
+
+                <p>
+                    Сайхан кофе заавал төвөгтэй байх албагүй.
+                    Шинэхэн үр, зөв найруулга болон тухтай орчин
+                    байхад л та өөрийнхөө мөчийг тайван өнгөрүүлэх
+                    боломжтой гэж бид итгэдэг.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ХОЛБОО БАРИХ -->
+        <section class="contact" id="contact">
+
+            <p class="small-title">БИДЭНД ЗОЧЛООРОЙ</p>
+
+            <h2>Өөрийн дуртай булангаа олоорой.</h2>
+
+            <p>Улаанбаатар хот, Монгол Улс</p>
+            <p>Өдөр бүр · 08:00 — 22:00</p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Nomad Coffee · Сэтгэл шингээж бэлтгэв.</p>
+    </footer>
+
+
+    <!-- MOBILE NAVIGATION -->
+    <script>
+        const menuButton = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".nav");
+
+        menuButton.addEventListener("click", function () {
+            const isOpen = navigation.classList.toggle("nav-open");
+
+            menuButton.setAttribute("aria-expanded", isOpen);
+            menuButton.setAttribute(
+                "aria-label",
+                isOpen ? "Цэс хаах" : "Цэс нээх"
+            );
+
+            menuButton.textContent = isOpen ? "✕" : "☰";
+        });
+
+        navigation.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navigation.classList.remove("nav-open");
+                menuButton.setAttribute("aria-expanded", "false");
+                menuButton.setAttribute("aria-label", "Цэс нээх");
+                menuButton.textContent = "☰";
+            });
+        });
+    </script>
+
+</body>
+</html>
