@@ -1,0 +1,339 @@
+
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NOMAD COFFEE HOUSE — Улаанбаатарын specialty coffee.">
+  <title>NOMAD COFFEE | Specialty Coffee</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header" id="home">
+    <div class="navbar container">
+      <a href="#home" class="logo">
+        NOMAD<span>.</span>
+        <small>COFFEE HOUSE</small>
+      </a>
+
+      <nav aria-label="Үндсэн цэс">
+        <ul class="nav-links">
+          <li><a class="active" href="#home">Нүүр</a></li>
+          <li><a href="#menu">Цэс</a></li>
+          <li><a href="#story">Бидний тухай</a></li>
+          <li><a href="#experience">Coffee experience</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button">
+        ☾ <span>Dark mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero container">
+      <div class="hero-content">
+        <p class="eyebrow">SPECIALTY COFFEE · ULAANBAATAR</p>
+
+        <h1>
+          Өдөр бүрийг<br>
+          <span>амттай эхлүүлье.</span>
+        </h1>
+
+        <p class="hero-description">
+          Чанартай кофены үр, ур чадвар, тайван уур амьсгал.
+          Таны өдөр тутмын жижигхэн тансаглал.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#menu" class="btn">Цэстэй танилцах ↗</a>
+          <a href="#story" class="btn btn-outline">Бидний түүх</a>
+        </div>
+
+        <div class="hero-signature">
+          <span></span>
+          CRAFTED WITH CARE · SERVED WITH SOUL
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-image">
+          <img src="img/photo1.png" alt="NOMAD COFFEE-ийн латте кофе">
+
+          <div class="hero-caption">
+            <span>01 — THE DAILY RITUAL</span>
+            <span>Good coffee, good mood.</span>
+          </div>
+        </div>
+
+        <div class="round-stamp" aria-label="NOMAD тэмдэг">
+          N<br>✳<br>C
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="feature-strip" aria-label="Манай онцлог">
+      <div class="container features">
+        <div class="feature-item">
+          <span class="feature-icon">◉</span>
+          <p>ЧАНАРТАЙ КОФЕ</p>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-icon">☕</span>
+          <p>ШИНЭХЭН БЭЛТГЭЛ</p>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-icon">♧</span>
+          <p>ТААТАЙ ОРЧИН</p>
+        </div>
+
+        <div class="feature-item">
+          <span class="feature-icon">♡</span>
+          <p>ӨДӨР БҮРИЙН ТАНСАГЛАЛ</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- COFFEE MENU -->
+    <section class="menu-section section-padding" id="menu">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">OUR SIGNATURE MENU</p>
+          <h2>Таны дуртай амт</h2>
+          <p>Кофе бүр өөрийн гэсэн түүх, үнэр, амттай.</p>
+        </div>
+
+        <div class="coffee-grid">
+          <article class="coffee-card" tabindex="0">
+            <div class="coffee-card-inner">
+              <div class="coffee-card-front">
+                <img src="img/photo2.png" alt="Espresso кофе">
+                <div class="coffee-card-info">
+                  <span class="card-number">01 / SIGNATURE</span>
+                  <h3>Espresso</h3>
+                  <p>Хүчтэй амт · Тансаг үнэр</p>
+                </div>
+              </div>
+              <div class="coffee-card-back">
+                <span class="eyebrow">THE CLASSIC</span>
+                <h3>Espresso</h3>
+                <p>Кофены жинхэнэ амтыг мэдрүүлэх өтгөн, баялаг сонголт.</p>
+                <span class="price">₮8,000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="coffee-card" tabindex="0">
+            <div class="coffee-card-inner">
+              <div class="coffee-card-front">
+                <img src="img/photo3.png" alt="Cappuccino кофе">
+                <div class="coffee-card-info">
+                  <span class="card-number">02 / FAVORITE</span>
+                  <h3>Cappuccino</h3>
+                  <p>Зөөлөн хөөс · Тэнцвэртэй амт</p>
+                </div>
+              </div>
+              <div class="coffee-card-back">
+                <span class="eyebrow">SMOOTH MOMENT</span>
+                <h3>Cappuccino</h3>
+                <p>Сүүтэй хөөсний зөөлөн мэдрэмж, кофены баялаг амт.</p>
+                <span class="price">₮10,000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="coffee-card" tabindex="0">
+            <div class="coffee-card-inner">
+              <div class="coffee-card-front">
+                <img src="img/photo4.png" alt="Latte кофе">
+                <div class="coffee-card-info">
+                  <span class="card-number">03 / DAILY RITUAL</span>
+                  <h3>Caffè Latte</h3>
+                  <p>Сүүн зөөлөн амт · Latte art</p>
+                </div>
+              </div>
+              <div class="coffee-card-back">
+                <span class="eyebrow">EVERYDAY LUXURY</span>
+                <h3>Caffè Latte</h3>
+                <p>Өдөр бүрийг ая тухтай эхлүүлэх зөөлөн сонголт.</p>
+                <span class="price">₮11,000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="coffee-card" tabindex="0">
+            <div class="coffee-card-inner">
+              <div class="coffee-card-front">
+                <img src="img/photo5.png" alt="Mocha кофе">
+                <div class="coffee-card-info">
+                  <span class="card-number">04 / SWEET ESCAPE</span>
+                  <h3>Mocha</h3>
+                  <p>Шоколад · Кофены хослол</p>
+                </div>
+              </div>
+              <div class="coffee-card-back">
+                <span class="eyebrow">A LITTLE INDULGENCE</span>
+                <h3>Mocha</h3>
+                <p>Шоколадны амт, кофены үнэрийг нэг дор мэдрээрэй.</p>
+                <span class="price">₮12,000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="coffee-card" tabindex="0">
+            <div class="coffee-card-inner">
+              <div class="coffee-card-front">
+                <img src="img/photo6.png" alt="Iced coffee">
+                <div class="coffee-card-info">
+                  <span class="card-number">05 / REFRESH</span>
+                  <h3>Iced Coffee</h3>
+                  <p>Сэрүү татам · Шинэхэн</p>
+                </div>
+              </div>
+              <div class="coffee-card-back">
+                <span class="eyebrow">FRESH & COOL</span>
+                <h3>Iced Coffee</h3>
+                <p>Дулаан өдрийн сэргээх, хөнгөн мэдрэмж.</p>
+                <span class="price">₮10,000</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="coffee-card" tabindex="0">
+            <div class="coffee-card-inner">
+              <div class="coffee-card-front">
+                <img src="img/photo1.png" alt="House special кофе">
+                <div class="coffee-card-info">
+                  <span class="card-number">06 / HOUSE SPECIAL</span>
+                  <h3>Nomad Special</h3>
+                  <p>Манай онцгой сонголт</p>
+                </div>
+              </div>
+              <div class="coffee-card-back">
+                <span class="eyebrow">MADE FOR YOU</span>
+                <h3>Nomad Special</h3>
+                <p>Кофенд дурлагчдад зориулсан онцгой мэдрэмж.</p>
+                <span class="price">₮13,000</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="menu-hint">Кофены карт дээр дарж дэлгэрэнгүй мэдээллийг үзээрэй ↗</p>
+      </div>
+    </section>
+
+    <!-- OUR STORY -->
+    <section class="story-section section-padding" id="story">
+      <div class="container story">
+        <div class="story-image">
+          <img src="img/photo6.png" alt="NOMAD COFFEE-ийн тухтай орчин">
+          <div class="story-image-label">A PLACE TO SLOW DOWN</div>
+        </div>
+
+        <div class="story-content">
+          <p class="eyebrow">OUR STORY</p>
+          <h2>Кофеноос илүү.<br><span>Мэдрэмжийн тухай.</span></h2>
+
+          <p>
+            NOMAD COFFEE бол өдөр тутмын завгүй амьдрал дундаас
+            түр зогсож, өөртөө цаг гаргах орон зай юм.
+          </p>
+
+          <p>
+            Чанартай кофены үр, нямбай бэлтгэл, дулаан уур амьсгал —
+            бидний аяга бүрт шингэсэн үнэт зүйлс.
+          </p>
+
+          <a href="#experience" class="text-link">Бидний туршлагатай танилцах ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COFFEE EXPERIENCE -->
+    <section class="experience-section section-padding" id="experience">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">THE NOMAD EXPERIENCE</p>
+          <h2>Үнэр. Амт. Агшин.</h2>
+          <p>Өдөр тутмын жижигхэн мөчөөс гоо сайхныг мэдэрцгээе.</p>
+        </div>
+
+        <div class="video-wrapper">
+          <video id="coffeeVideo" controls preload="metadata" poster="img/photo1.png">
+            <source src="video/clip.mp4" type="video/mp4">
+            <track
+              src="video/clip.mn.vtt"
+              kind="subtitles"
+              srclang="mn"
+              label="Монгол хадмал"
+              default>
+            Таны браузер видео тоглуулах боломжгүй байна.
+          </video>
+        </div>
+
+        <p class="video-note">
+          Видео үзэхдээ тохиргооноос Монгол хадмалыг асааж болно.
+        </p>
+      </div>
+    </section>
+
+    <!-- VISIT US -->
+    <section class="visit-section section-padding" id="visit">
+      <div class="container visit-card">
+        <div>
+          <p class="eyebrow">COME SAY HELLO</p>
+          <h2>Таны дараагийн<br><span>дуртай газар.</span></h2>
+          <p>Кофегоо сонгоод, тайван агшнаа өөртөө бэлэглээрэй.</p>
+        </div>
+
+        <div class="visit-details">
+          <div class="visit-detail">
+            <span>⌖</span>
+            <div>
+              <h3>Байршил</h3>
+              <p>Улаанбаатар хот, Монгол улс</p>
+            </div>
+          </div>
+
+          <div class="visit-detail">
+            <span>◷</span>
+            <div>
+              <h3>Ажиллах цаг</h3>
+              <p>Өдөр бүр · 08:00 – 22:00</p>
+            </div>
+          </div>
+
+          <div class="visit-detail">
+            <span>☕</span>
+            <div>
+              <h3>Бидний уриа</h3>
+              <p>Good coffee, good mood.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <a href="#home" class="logo">NOMAD<span>.</span></a>
+      <p>CRAFTED WITH CARE · SERVED WITH SOUL</p>
+      <p class="copyright">
+        © <span id="year">2026</span> NOMAD COFFEE HOUSE. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
